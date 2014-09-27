@@ -25,3 +25,6 @@ The rules are
 * "-" and "," to "_"
 10. Aggregate each variable for each activity and subject and put the result in a new dataset called "tidy"
 11. Write the dataset into a tab delimited text file called tidy.txt
+
+## 4. Code Book
+CodeBook.md describes the list of variables included, class of the variables, and the data range of the values.
