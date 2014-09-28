@@ -37,6 +37,7 @@ mergedData <- merge(tailoredData, activityLabel, by.x = "Activity", by.y = "V1")
 ##  clean up the merged data by exluding duplicates column and re-order the columns
 mergedData[, 1] <- mergedData[, 89]
 mergedData <- mergedData[, c(2, 1, 3:88)]
+mergedData$Activity <- tolower(mergedData$Activity)
 
 ##  change the column names to more standard and readable names
 names(mergedData) <- gsub("mean", "Mean", names(mergedData))
