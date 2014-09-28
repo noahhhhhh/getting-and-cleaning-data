@@ -48,6 +48,7 @@ names(mergedData) <- gsub("-|,|\\(", "_", names(mergedData))
 ##  produce a tidy dataset that only shows the average of other column values grouping by subject and activity
 tidy <- aggregate(mergedData, by = list(Subject = mergedData$Subject, Activity = mergedData$Activity), mean)
 tidy <- tidy[, -(3:4)]
+mergedData$Activity <- tolower(mergedData$Activity)
 
 ##  export the tidy dataset to a tab delimited text file
-write.table(tidy, "tidy.txt", sep = "\t")
+write.table(tidy, "tidy.txt", sep = "\t", row.name = F)
