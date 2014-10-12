@@ -108,4 +108,5 @@ For example, tBodyAcc_Mean_X means this variable has been applied mean onto the 
 - sitting
 - standing
 - laying
+
 3. The rest of the variables (See the description for the raw data in Section 2). The mean and std. variables are averaged by each activity and each subject. All the values are normalised with a bound from -1 to 1.
