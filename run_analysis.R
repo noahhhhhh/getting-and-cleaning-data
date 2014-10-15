@@ -6,7 +6,7 @@ trainSubject <- read.delim("train/subject_train.txt", header = F, sep = "")
 trainActivity <- read.delim("train/y_train.txt", header = F, sep = "")
 trainData <- read.delim("train/X_train.txt", header = F, sep = "")
 
-##  Combine the training-related dataset
+##  Combine the training-related dataset (subject and activity)
 training <- cbind(trainSubject, trainActivity, trainData)
 
 
